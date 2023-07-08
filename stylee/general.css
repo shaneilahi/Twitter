@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Mulish;
+  margin: 0;
+  height: 3000px;
+  padding-top: 122px;
+  padding-left: 650px;
+  padding-right: 0;
+}
+
+.parent-div {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  position: relative;
+}

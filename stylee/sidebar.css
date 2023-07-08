@@ -1,0 +1,126 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 300;
+
+  position: absolute;
+  top: 0;
+  left: 370px;
+  bottom: 0;
+  width: 219px;
+}
+
+
+.bars {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding: 10px;
+  /* border-right: 1px solid gray; */
+
+  display: flex;
+  flex-direction: column;
+}
+
+.bars-1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+
+.bars-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin: 10px 0px;
+}
+
+/* .rightbar {
+  position: fixed;
+  right: 250px;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  border-left: 1px solid gray;
+} */
+
+.compose-tweet-div {
+  border: none;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(21, 155, 233);
+  cursor: pointer;
+
+  height: 50px;
+  width: 50px;
+}
+
+.compose-tweet {
+  height: 26px;
+  width: 26px;
+  object-fit: cover;
+}
+
+
+.home-icon
+{
+  height: 30px;
+}
+
+
+
+.home-div {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  border-radius: 35px;
+  border: 1px solid transparent;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.home-div:hover {
+  border: 1px solid rgb(31, 31, 31);
+  background-color: rgb(31, 31, 31);
+}
+
+
+
+.home-div-tooltip {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bars-tooltip {
+  position: absolute;
+  pointer-events: none;
+  z-index: 100;
+  bottom: -34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+  transition-delay: 0.5s;
+}
+
+
+.bars-tooltip p {
+  margin: 0;
+  background-color: rgba(117, 157, 197, 0.438);
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+
+.home-div:hover .bars-tooltip {
+  opacity: 1;
+}
