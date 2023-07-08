@@ -1,2 +1,2 @@
-# twitter
+# Twitter
 Twitter Home Clone
